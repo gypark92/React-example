@@ -1,7 +1,7 @@
 
 function createDOM(node) {
     if (typeof node === 'string') {
-      return document.createTextNode(node);
+      return document.createTextNode(node);//문자열 노드 
     }
   
     const element = document.createElement(node.tag);
@@ -14,9 +14,9 @@ function createDOM(node) {
   }
   
   const vdom = {
-    tag: 'p',
-    props: {},
-    children: [
+    tag: 'p',//태그명 
+    props: {},//속성
+    children: [//자식요소 객체로 들어감 
       {
         tag: 'h1',
         props: {},
